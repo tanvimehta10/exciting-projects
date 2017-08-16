@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container mycontainer">
+        <nav class='navbar navbar-default navbar-fixed-top full_navbar'>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="images/league_logo.jpg" class="logo_img">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hamburger-navigation">
+                        <span class="sr-only">Navigation toggle</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="hamburger-navigation">
+
+
+
+                    <ul class="nav navbar-nav" role="menu">
+                        <li><a href="home.html" class="active">Home</a><span class="sr-only">current</span>
+                        </li>
+                        <li><a href="league_table.html">League Table</a>
+                        </li>
+                        <li><a href="team_directory.html">Team Directory</a>
+                        </li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" role="button" data-toggle="dropdown">Match Highlights<span class="caret" /></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="images.html">Images</a>
+                                </li>
+                                <li><a href="videos.html">Videos</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="navbar-text navbar-right nav_right ">
+                        <a href="user_register.html">Register</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="myjquery col-md-6">
+
+
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="active"><a href="#TeamInfo" role="tab" datatoggle="tab">Team Info</a> </li>
+                    <li><a href="#venue" role="tab" datatoggle="tab">Venue</a> </li>
+                    <li><a href="#statistics" role="tab" datatoggle="tab">Statistics</a> </li>
+                    <li><a href="#suspensions" role="tab" datatoggle="tab"> Suspensions</a> </li>
+
+                </ul>
+                <div class="tab-content">
+                    <div class="active tab-pane" id="TeamInfo">
+                        <h1>Team Info</h1>
+                        <pre>
+                Contact: Player Name
+                Telephone(h): 022-23545665
+                Telephone(w): 91-46214525225
+                Mobile: 2669554545
+                Email: xyz@gmail.com  
+                </pre>
+                    </div>
+
+                    <div class="tab-pane" id="venue">
+                        <h1>Address</h1>
+                        <P>Chiswick P3,England</P>
+                    </div>
+                </div>
+
+
+
+
+                <button>Change Team</button>
+                <h1>This is text to be changed</h1>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!--<script>
+        $('button').click(function () {
+
+            $('h1').html("This is the changed text");
+        });
+    </script> -->
+    <script src="jQuery/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
